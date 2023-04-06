@@ -9,7 +9,6 @@ const passwordDisplay = document.getElementById('passwordDisplay');
 const generateButton = document.getElementById('generateButton');
 const copyButton = document.getElementById('copyButton');
 
-
 const LOWERCASE_CHAR_CODES = arrayFromLowToHigh(97, 122);
 const UPPERCASE_CHAR_CODES = arrayFromLowToHigh(65, 90);
 const NUMBER_CHAR_CODES = arrayFromLowToHigh(48, 57);
@@ -17,16 +16,6 @@ const SYMBOL_CHAR_CODES = arrayFromLowToHigh(33, 47).concat(arrayFromLowToHigh(5
 
 characterAmountRange.addEventListener('input', syncCharacterAmount); //syncs the slider and the value next to it
 characterAmountNumber.addEventListener('input', syncCharacterAmount);
-
-/* form.addEventListener('submit', e => {
-    e.preventDefault()
-    const characterAmount = characterAmountNumber.value
-    const includeUppercase = includeUppercaseElement.checked
-    const includeNumbers = includeNumbersElement.checked
-    const includeSymbols = includeSymbolsElement.checked
-    const password = generatePassword(characterAmount, includeUppercase, includeNumbers, includeSymbols)
-    passwordDisplay.innerText = password;
-}); */
 
 generateButton.addEventListener('click', e => {
     e.preventDefault()
