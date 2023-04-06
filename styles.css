@@ -1,0 +1,145 @@
+body {
+    background-color: #333;
+    margin: 0;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: #0078e9;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.form {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+.character-amount-container {
+    display: flex;
+    align-items: center;
+}
+
+.number-input {
+    width: 2rem;
+}
+
+.password-display {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #333;
+    height: 2rem;
+    width: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem;
+} 
+
+.btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem; 
+} 
+
+.btn:hover {
+    background-color: #FFFFFF33;
+}
+
+.copy-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.copy-btn:hover {
+    background-color: #FFFFFF33;
+}
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px; 
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    z-index: 1; 
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.rainbow-border {
+    border-radius: 5px;
+    animation: rainbow-border 5s linear infinite;
+  }
+  
+@keyframes rainbow-border {
+    0% {
+      border: 2px solid red;
+    }
+    14.3% {
+      border: 2px solid orange;
+    }
+    28.6% {
+      border: 2px solid yellow;
+    }
+    42.9% {
+      border: 2px solid green;
+    }
+    57.2% {
+      border: 2px solid blue;
+    }
+    71.5% {
+      border: 2px solid indigo;
+    }
+    85.8% {
+      border: 2px solid violet;
+    }
+    100% {
+      border: 2px solid red;
+    }
+  }
+  
+  
+/* 006699
